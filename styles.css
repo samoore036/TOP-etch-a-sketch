@@ -1,0 +1,143 @@
+/* color palette
+    red: #fb2e01
+    light bluish-green: #6fcb9f
+    tannish yellow: #ffe28a
+    creamy yellow: #fffeb3
+    light blue: #87b8b5
+*/
+
+@font-face {
+    font-family: Euphoria;
+    src: url('fonts/EuphoriaScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: Alegreya;
+    src: url("fonts/AlegreyaSC-Black.ttf");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #6fcb9f;
+}
+
+#main-div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #fb2e01;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1300px;
+    height: 700px;
+}
+
+#main-header {
+    color: #fffeb3;
+    margin-top: 10px;
+    font-size: 60px;
+    font-family: Euphoria;
+}
+
+#sketch-bar {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+#size-settings, #color-settings {
+    font-family: Alegreya;
+    color: #ffe28a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 190px;
+    font-size: 18px;
+    width: 80px;
+    text-align: center;
+}
+
+#grid-buttons, #color-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 15px;
+}
+
+.button {
+    font-family: Alegreya;
+    font-size: 18px;
+    Width: 100px;
+    border-radius: 5px;
+}
+
+.erase-button {
+    font-family: Alegreya;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 85px;
+    height: 85px;
+}
+
+#footer {
+    margin-top: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 5px;
+}
+
+#footer-info {
+    font-size: 16px;
+    color: #fb2e01;
+}
+
+#drawing-board {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    background-color: #cfcccc;
+    margin-top: -50px;
+    height: 546px;
+    width: 966px;
+    flex-wrap: wrap;
+}
+
+.small-grid {
+    height: 10px;
+    width: 10px;
+    padding: 1px;
+}
+
+.medium-grid {
+    height: 19.2px;
+    width: 19.4px;
+    padding: .8px;
+}
+
+.large-grid {
+    height: 64px;
+    width: 60.2px;
+    padding: 1.1px;
+}
+
+.small-grid, .medium-grid, .large-grid {
+    border: 1px;
+    border-style: solid;
+    border-color:rgb(146, 143, 140);
+}
+
+.active {
+    background-Color: #eeec73;
+}
+
+

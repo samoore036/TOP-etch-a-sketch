@@ -1,1 +1,56 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Etch A Sketch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div></div> <!-- shadow div to center main div -->
+
+    <div id="main-div">
+        <div id="header-bar">
+            <h3 id="main-header">Etch A Sketch</h3>
+        </div>
+
+        <div id="sketch-bar">
+            <div id="size-settings"> 
+                <div id="grid-buttons">
+                    <h3 class="header">Grid size:</h3>
+                    <button class="button size-button" id="small-btn">Small</button>
+                    <button class="button size-button" id="medium-btn">Medium</button>
+                    <button class="button size-button" id="large-btn">Large</button>
+                </div>
+
+                <button class="erase-button" id="clear">Clear</button>
+            </div>
+
+            <div id="drawing-board"></div>
+            
+            <div id="color-settings">
+                <div id="color-buttons">
+                    <h3 class="header">Mode:</h3>
+                    <button class="button color-button" id="classic">Classic</button>
+                    <button class="button color-button" id="random">Random</button>
+                    <button class="button color-button" id="retro">Retro</button>
+                </div>
+
+                <button class="erase-button color-button" id="eraser">Eraser</button>
+                
+            </div>
+        </div>     
+    </div>
+
+    <div id="footer">
+        <h6 id="footer-info">Webpage by: Shaheen Moore</h6>
+        <a id=footer-logo" href="https://github.com/samoore036"><img src="images/git-logo.webp" height="20px" width="20px"></a>
+    </div>
+    
+</body>
+
+</html>
